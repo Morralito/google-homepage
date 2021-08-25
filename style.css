@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #3c4043;
+    /* margin: 0; */
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 96.71875vw;
+    height: 97vh;
+    background-color: salmon;
+    flex-wrap: wrap;
+}
+nav, footer{
+    background-color: slateblue;
+    width: 100%;
+    height: 42px;
+    display: flex;
+}
+
+.ulist {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ulist li {
+    list-style-type: none;
+}
+
+.ulist li a {
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.searchbar {
+    background-color: lawngreen;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type='search']{
+    width: 584px;
+    height: 45px;
+    padding: 0;
+    border: 0;
+    border-radius: 15px;
+}
+
+input:focus-visible {
+    outline: unset;
+}
+
+form hr {
+    flex-basis: 100%;
+    height: 0;
+    margin: 0;
+    border: 0;
+}
+button {
+    font-size: 14px;
+    height: 36px;
+    color: inherit;
+    margin: 11px 4px;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    font-family: arial,sans-serif;
+    line-height: 27px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.inputbar{
+    width: 584px;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #fff;
+}
+
+
+.icon {
+    display: flex;
+    align-items: center; 
+    padding: 0 8px;
+    height: 24px;
+    width: 24px;
+}
+
+.voice {
+    display: flex;
+    align-items: center; 
+    padding: 0 8px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
