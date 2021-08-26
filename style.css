@@ -33,27 +33,34 @@ body {
 .container {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     align-items: center;
     width: 96.71875vw;
     height: 97vh;
-    background-color: salmon;
     flex-wrap: wrap;
 }
 nav, footer{
-    background-color: slateblue;
     width: 100%;
-    height: 42px;
+    height: 48px;
     display: flex;
 }
-
+nav {
+    align-self: flex-start  ;
+}
+footer {
+    align-self: flex-end;
+}
 .ulist {
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
+}
+
+footer .ulist {
+    justify-content: space-between;
 }
 
 .ulist li {
@@ -66,8 +73,11 @@ nav, footer{
     color: inherit;
 }
 
+.ulist li a:hover{
+    text-decoration: underline;
+}
+
 .searchbar {
-    background-color: lawngreen;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -79,6 +89,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 31px;
 }
 
 input[type='search']{
@@ -137,4 +148,41 @@ button {
     height: 24px;
     width: 24px;
     cursor: pointer;
+}
+
+.gb_Ve {
+    height: 24px;
+    width: 24px;
+}
+
+nav ul li:first-child {
+    padding-right: 15px;
+}
+
+nav ul li:nth-child(2) {
+    padding-right: 15px;
+}
+
+nav ul li:nth-child(3){
+    padding-left: 12px;
+}
+
+nav ul li:nth-child(4){
+    padding: 0 12px;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    color: white;
+    border-radius: 2px;
+    font-size: 13px;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    line-height: 28px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer ul div {
+    display: flex;
+}
+footer ul div li{
+    padding-left: 27px;
 }
